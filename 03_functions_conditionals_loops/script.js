@@ -150,5 +150,29 @@
 
 
 
+
 // Javascript built-in functions
-// video 3:45:00
+
+// replace()
+
+// const myString = 'Kerim';
+// myString.replace('K', 'M');
+// const newName = myString.replace('K', 'M');
+// console.log(newName);
+
+// letter K is replaced with letter M
+
+
+// toUpperCase() , split(" ") , indexOf();
+
+let string = 'Hello world';
+
+let newString = string.toUpperCase();
+console.log(newString);
+
+let splitString = newString.split(" ");
+console.log(splitString);
+
+let indexOfString = string.indexOf('H');
+console.log(indexOfString);
+
