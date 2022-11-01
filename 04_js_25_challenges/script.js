@@ -337,5 +337,184 @@
 // };
 // console.log(stringToArray('I really like arrays.'))
 
-// video 5:33:00
 
+
+
+// Example - Remove the spaces from the string, then return the result string
+// First way
+// function noSpaceString(string) {
+//   const array = string.split(" ");
+//   console.log(array);
+//   let newArray = [];
+//   console.log(newArray);
+//   for (let i = 0; i < array.length; i++) {
+//     const trimmedString = array[i].trim();
+//     console.log(trimmedString);
+//     newArray.push(trimmedString);
+//     console.log(newArray);
+//   };
+//   const finalString = newArray.join("");
+//   console.log(finalString);
+//   return finalString;
+// };
+// console.log(noSpaceString('   My   name    is    Kerim  '));
+
+
+
+// Second way
+// function noSpaceString(string) {
+//   string = string.replace(/\s/g, '');
+//   return string;
+// };
+// console.log(noSpaceString('      My     name      is      Kerim   '));
+
+
+
+
+// Example - Given an array of integers, return a new array with each value doubled - map()
+// function mapFunction(arr) {
+//   const result = arr.map((number) => {
+//     return number * 2;
+//   });
+//   return result
+// };
+// console.log(mapFunction([1,2,3,4,5]));
+
+
+
+
+// Example - Simple Dragon Game - 2 bullets to kill a dragon
+// First way
+// function myHero(bullets, dragons) {
+//   const result = bullets / dragons >= 2 ? true : false;
+//   return result;
+// };
+// console.log(myHero(4, 2));
+
+
+// Second way
+// function myHero2(bullets, dragons) {
+//   return bullets / dragons >= 2;
+// };
+// console.log(myHero2(1,2));
+
+
+
+
+// Example - Sum of two arrays
+
+// Array 1: [1,2,3]
+// Array 2: [4,5,6]
+// Result:  [5,7,9]
+
+// Array 1: [1,2,3] = 6
+// Array 2: [4,5,6] = 15;
+// Result:  21
+
+// First way
+// function sumArrays(array1, array2) {
+//  let newArray = [];
+//  console.log(newArray);
+
+//  for(let i = 0; i < array1.length; i++) {
+
+//     const array1Value = array1[i];
+//     console.log(array1Value);
+//     const array2Value = array2[i];
+//     console.log(array2Value);
+
+//     const totalValue = array1Value + array2Value;
+//     console.log(totalValue);
+//     newArray.push(totalValue);
+//     console.log(newArray);
+//   };
+//   return newArray;
+// };
+// console.log(sumArrays([1,2,3], [4,5,6]));
+
+
+// Second way
+// function arrayPlusArray(array1, array2) {
+//   let sum = 0;
+//   for (let i= 0; i< array1.length; i++) {
+//     const array1Value = array1[i];
+//     console.log(array1Value);
+//     const array2Value = array2[i];
+//     console.log(array2Value);
+//     const addedValue = array1Value + array2Value;
+//     console.log(addedValue)
+//     sum = sum + addedValue;
+//     console.log(sum);
+//   };
+//   return sum;
+// };
+// console.log(arrayPlusArray([1,2,3], [4,5,6]));
+
+
+// Third way
+// function sumArrays(array1, array2) {
+//   let array1Value = array1.reduce((a, b) => a + b, 0);
+//   console.log(array1Value);
+//   let array2Value = array2.reduce((a, b) => a + b, 0);
+//   console.log(array2Value);
+//   let totalSum = array1Value + array2Value;
+//   console.log(totalSum);
+//   return totalSum;
+// }
+// console.log(sumArrays([1,2,3], [1,2,3]));
+
+
+
+
+// Example - Which year belongs to which century
+// function yearCentury(year) {
+//   return Math.ceil(year/100);
+// };
+// console.log(yearCentury(1901));
+
+
+
+
+// Example - Human years, cat years, dog years
+// let humanYearsCatYearsDogYears = function(humanYears) {
+//   let catsAge;
+//   let dogsAge;
+//   if (humanYears === 1) {
+//     return [humanYears, 15, 15];
+//   }
+//   if (humanYears === 2) {
+//     return [humanYears, 24, 24];
+//   }
+//   const excessYears = humanYears - 2;
+//   const extraCatYears = excessYears * 4;
+//   const extraDogYears = excessYears * 5;
+//   return [humanYears, 24 + extraCatYears, 24 + extraDogYears];
+// };
+// console.log(humanYearsCatYearsDogYears(3));
+
+
+
+
+// Example - sport championship
+// function points(gamesArray) {
+//     let totalPoits = 0;
+
+//     for (let i = 0; i < gamesArray.length; i++){
+//       const value = gamesArray[i];
+//       console.log(value);
+//       const parts = value.split(":");
+//       console.log(parts);
+
+//       const x = parts[0];
+//       const y = parts[1];
+
+//       if (x > y) {
+//         totalPoits = totalPoits + 3;
+//       } else if (x === y) {
+//         totalPoits = totalPoits + 1;
+//       } 
+//     };
+
+//     return totalPoits;
+// };
+// console.log(points(['1:0', '2:0', '0-0', '1-2']));
