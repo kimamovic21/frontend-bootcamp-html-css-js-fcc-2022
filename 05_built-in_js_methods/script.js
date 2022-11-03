@@ -1,1 +1,2 @@
-// video 06:10:10
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
