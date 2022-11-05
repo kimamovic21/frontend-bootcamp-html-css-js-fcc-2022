@@ -83,24 +83,24 @@
 
 
 // Example
-const myObj = {
-    nestedObject1: {
-        price: 100,
-        quantity: 5,
-    },
-    nestedObject2: {
-        price: 150,
-        quantity: 2,
-    },
-};
+// const myObj = {
+//     nestedObject1: {
+//         price: 100,
+//         quantity: 5,
+//     },
+//     nestedObject2: {
+//         price: 150,
+//         quantity: 2,
+//     },
+// };
 
-const myArray = [myObj.nestedObject1, myObj.nestedObject2];
-console.log(myArray);
+// const myArray = [myObj.nestedObject1, myObj.nestedObject2];
+// console.log(myArray);
 
-const result1 = myArray[0].price * myArray[0].quantity;
-console.log(result1);
-const result2 = myArray[1].price * myArray[1].quantity;
-console.log(result2);
+// const result1 = myArray[0].price * myArray[0].quantity;
+// console.log(result1);
+// const result2 = myArray[1].price * myArray[1].quantity;
+// console.log(result2);
 
-const totalResult = result1 > result2;
-console.log(totalResult);
+// const totalResult = result1 > result2;
+// console.log(totalResult);

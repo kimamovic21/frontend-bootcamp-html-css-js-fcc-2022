@@ -165,14 +165,14 @@
 
 // toUpperCase() , split(" ") , indexOf();
 
-let string = 'Hello world';
+// let string = 'Hello world';
 
-let newString = string.toUpperCase();
-console.log(newString);
+// let newString = string.toUpperCase();
+// console.log(newString);
 
-let splitString = newString.split(" ");
-console.log(splitString);
+// let splitString = newString.split(" ");
+// console.log(splitString);
 
-let indexOfString = string.indexOf('H');
-console.log(indexOfString);
+// let indexOfString = string.indexOf('H');
+// console.log(indexOfString);
 
