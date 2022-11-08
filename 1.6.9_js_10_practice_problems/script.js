@@ -307,4 +307,86 @@
 
 
 
-// video 09:46:46
+// Example - Alternate capitalization
+
+// first way
+// function capitalize(string) {
+//     const array1 = string.split("");
+//     const array2 = string.split("");
+
+//     // Even capitalization
+//     array1.forEach((item, index, original) => {
+//         if(index % 2 === 0) {
+//             original[index] = item.toUpperCase();
+//         }
+//     });
+//     console.log(array1);
+
+//     // Odd capitalization
+//     array2.forEach((item, index, original) => {
+//         if(index % 2 !== 0) {
+//             original[index] = item.toUpperCase();
+//         };
+//     });
+
+//     const array1String = array1.join("");
+//     const array2String  =array2.join("");
+
+//     return [array1String, array2String];
+
+// };
+
+// console.log(capitalize('Kerim Imamovic'));
+
+
+
+// second way
+// function toWeirdCase(string) {
+//     let reg = /\b(?![\s.])/;
+//     let res = string.split(reg);
+//     let newArr = [];
+  
+//     for (let k = 0; k < res.length; k++) {
+//       let newString = "";
+//       for (let j = 0; j < res[k].length; j++) {
+//         if (j % 2 == 0) {
+//           newString += res[k].charAt(j).toUpperCase()
+//         } else {
+//           newString += res[k].charAt(j).toLowerCase()
+//         };
+//       };
+//       newArr.push(newString);
+//     };
+//     return newArr.join('');
+//   };
+  
+// console.log(toWeirdCase('This is a test'));
+
+
+
+
+// Example - From greatest to least number
+
+// function maxNumber(number) {
+//     const result = number.toString()
+//                          .split("")
+//                          .sort((firstNum, secondNum) => secondNum - firstNum)
+//                          .join("")
+//     console.log(result);
+//     const newNumber = parseInt(result);
+//     console.log(newNumber);
+//     console.log(typeof(result), '- result');
+//     console.log(typeof(newNumber), '- newNumber');
+//     return newNumber;
+// };
+// console.log(maxNumber(123456789));
+
+
+
+// second way
+// let numArray = [140000, 104, 99];
+// numArray.sort(function(a, b) {
+//   return a - b;
+// });
+
+// console.log(numArray);
