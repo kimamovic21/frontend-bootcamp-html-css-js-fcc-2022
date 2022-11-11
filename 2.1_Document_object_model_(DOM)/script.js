@@ -149,4 +149,49 @@
 
 // Example - fifth example in index.html
 
-// video 11:59:00
+const list = document.querySelector('ul');
+console.log(list);
+console.log(list.nodeType);
+console.log(list.children);
+
+const listItem = list.children.item(0);
+console.log(listItem);
+listItem.textContent = 'Some new content';
+
+list.appendChild(document.createElement('li'));
+list.children.item(3).textContent = 'Another content';
+
+const pElement = document.querySelectorAll('p').item(1);
+console.log(pElement);
+const parent = document.querySelector('.main-body');
+console.log(parent);
+const newP = document.createElement('p');
+newP.textContent = 'Programatically added between';
+console.log(newP);
+parent.insertBefore(newP, pElement); 
+
+
+
+
+// Example 
+
+// const btn = document.getElementById('click-me');
+// btn.style.cursor = 'pointer';
+// btn.style.backgroundColor = 'rgb(3, 127, 252)';
+// btn.style.border= 'none';
+// btn.style.borderRadius = '5px';
+// btn.style.padding = '10px 20px';
+// btn.style.color = '#efefef';
+
+// function clickMe() {
+//    console.log('Click me!');
+//    const myParagraph = document.createElement('p');
+//    myParagraph.textContent = 'I created paragraph in js!';
+//    document.body.appendChild(myParagraph);
+//    myParagraph.setAttribute('id', 'my-paragraph');
+//    myParagraph.style.backgroundColor = '#333';
+//    myParagraph.style.color = '#efefef';
+//    myParagraph.style.padding = '5px';
+//    console.log(myParagraph);
+// };
+
