@@ -1,0 +1,23 @@
+body {
+    background-color: #efefef;
+}
+
+p {
+    color: red;
+}
+
+.full-name {
+    color: blue;
+}
+
+#fullName {
+    color: green;
+}
+
+.ordered-list li {
+    color: red;
+}
+
+#main > p {
+    color: green;
+}
