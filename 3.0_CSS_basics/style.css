@@ -21,3 +21,47 @@ p {
 #main > p {
     color: green;
 }
+
+
+.box-1 {
+    border: 2px solid green;
+}
+
+.box-1 p {
+    color: green;
+}
+
+.box-2 {
+    border: 2px solid blue;
+}
+
+.box-2 p {
+    color: blue;
+}
+
+.box {
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+
+button {
+    margin-top: 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+ol #list-item-1 {
+    color: orange;
+}
+
