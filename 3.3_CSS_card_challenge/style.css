@@ -19,8 +19,8 @@ body {
     position: absolute;
     top: 10%;
     left: 15%;
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
     box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.3);
     overflow: hidden;
     border-radius: 0.5rem;
@@ -134,3 +134,24 @@ body {
 }
 
 
+/* Responsive design */
+
+@media screen and (max-width: 650px) {
+    #bottom-left-section, #bottom-right-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    #bottom-section {
+        top: 5rem;
+    }
+
+    #bottom-left-section {
+        top: 13rem;
+    }
+
+    #card {
+        overflow: visible;
+        margin-bottom: 1rem;
+    }
+}
